@@ -1,0 +1,60 @@
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+@font-face {
+    font-family: 'Pixie';
+    src: url('../media/ProcrastinatingPixie.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mom';
+    src: url('../media/MomcakeBold.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #FAFAFA;
+}
+#cabecera_pagina{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+}
+#logo{
+    width: 150px;
+    padding: 20px;
+}
+#bars{
+    width: 35px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#lista{
+    padding: 60px;
+}
+#titulo_lista{
+    text-transform: uppercase;
+    font-family: "Pixie";
+    font-size: 65px;
+    color: #ffab91;
+    text-shadow: 0 0 4px black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+    padding-bottom: 50px;
+}
+#lista_ul{
+    padding-top: 80px;
+    list-style: none;
+    font-family: "Mom";
+    font-size: 40px;
+}
+#lista_ul li{
+    padding: 20px;
+}
+#lista_ul li:nth-child(odd){
+    background: #f1f1f1;
+}
