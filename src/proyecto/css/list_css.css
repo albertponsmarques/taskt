@@ -18,6 +18,10 @@ body{
     background-color: #FAFAFA;
 }
 #cabecera_pagina{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #FAFAFA;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #c6c6c6;
@@ -35,16 +39,18 @@ body{
 #lista{
     padding: 60px;
 }
+#header_title {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+    padding-bottom: 50px;
+}
 #titulo_lista{
     text-transform: uppercase;
     font-family: "Pixie";
     font-size: 65px;
     color: #ffab91;
     text-shadow: 0 0 4px black;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #c6c6c6;
-    padding-bottom: 50px;
 }
 #lista_ul{
     padding-top: 80px;
@@ -57,4 +63,24 @@ body{
 }
 #lista_ul li:nth-child(odd){
     background: #f1f1f1;
+}
+#container_imput{
+    padding-right: 40px;
+}
+input {
+    float: left;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    font-size: 40px;
+    font-family: Mom;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.addBtn {
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50px;
+    padding: 17px;
 }
