@@ -2,9 +2,7 @@ image: ubuntu:latest
 pages:
   stage: deploy
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+    - echo 'asd'
   artifacts:
     paths:
     - src/proyecto/html/list.html
