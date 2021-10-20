@@ -7,6 +7,6 @@ pages:
     - mv .public public
   artifacts:
     paths:
-    - public/src/proyecto/html/list.html
+    - src/proyecto/html/list.html
   only:
   - master
