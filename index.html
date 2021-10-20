@@ -8,25 +8,32 @@
         <title>TASKT</title>
     </head>
     <body>
-        <section id="cabecera_pagina">
-            <img id="bars" src="src/proyecto/media/menu_bars.png">
-            <img id="logo" src="src/proyecto/media/logo.png">
-        </section>
-        <section id="lista">
-            <header id="header_title">
-                <h2 id="titulo_lista">Lista de la compra</h2>
-            </header>
-            <ul id="lista_ul">
-                <li><input type="checkbox">4 Huevos</li>
-                <li><input type="checkbox">3 limones</li>
-                <li><input type="checkbox">Leche de 1L</li>
-                <li><input type="checkbox">3 pimientos verdes</li>
-                <li><input type="checkbox">80 lechugas</li>
-            </ul>
-            <div id="container_imput">
-                <input type="text" id="myInput" placeholder="Nuevo elemento">
-                <img onclick="newElement()" class="addBtn" src="src/proyecto/media/boton_plusv2.png">
+        <div id="main">
+            <section id="cabecera_pagina">
+                <img id="bars" src="src/proyecto/media/menu_bars.png" onclick="openNav()">
+                <img id="logo" src="src/proyecto/media/logo.png">
+            </section>
+            <div id="mySidenav" class="sidenav">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <a>Lista de deberes</a>
+                <a>Lista de quehaceres</a>
             </div>
-        </section>
+            <section id="lista">
+                <header id="header_title">
+                    <h2 id="titulo_lista">Lista de la compra</h2>
+                </header>
+                <ul id="lista_ul">
+                    <li><input type="checkbox">4 Huevos</li>
+                    <li><input type="checkbox">3 limones</li>
+                    <li><input type="checkbox">Leche de 1L</li>
+                    <li><input type="checkbox">3 pimientos verdes</li>
+                    <li><input type="checkbox">80 lechugas</li>
+                </ul>
+                <div id="container_imput">
+                    <input type="text" id="myInput" placeholder="Nuevo elemento">
+                    <img onclick="newElement()" class="addBtn" src="src/proyecto/media/boton_plusv2.png">
+                </div>
+            </section>
+        </div>
     </body>
 </html>
