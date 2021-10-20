@@ -60,6 +60,10 @@ body{
 }
 #lista_ul li{
     padding: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #lista_ul li:nth-child(odd){
     background: #f1f1f1;
@@ -83,4 +87,25 @@ input {
     transition: 0.3s;
     width: 50px;
     padding: 17px;
+}
+
+input[type=checkbox] {
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+input[type=checkbox]:not(:checked) {
+    background-image: url("../media/crossbox.png");
+    background-color: transparent;
+}
+
+input[type=checkbox]:checked {
+    background-image: url("../media/checkbox.png");
+    background-color: transparent;
 }
