@@ -1,4 +1,4 @@
-image: alpine:latest
+image: ubuntu:latest
 pages:
   stage: deploy
   script:
@@ -7,6 +7,6 @@ pages:
     - mv .public public
   artifacts:
     paths:
-    - public/
+    - public/src/proyecto/html/list.html
   only:
   - master
