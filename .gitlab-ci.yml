@@ -1,10 +1,11 @@
-image: ubuntu:latest
 pages:
   stage: deploy
   script:
-    - echo 'asd'
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
-    - src/proyecto/html/list.html
+      - public
   only:
-  - master
+    - master
