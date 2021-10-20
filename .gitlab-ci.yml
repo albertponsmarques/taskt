@@ -5,6 +5,6 @@ pages:
     - echo 'asd'
   artifacts:
     paths:
-    - src/proyecto/html/list.html
+    - taskt_project/src/proyecto/html/list.html
   only:
   - master
