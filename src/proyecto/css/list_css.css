@@ -64,9 +64,14 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    word-break: break-word;
 }
 #lista_ul li:nth-child(odd){
     background: #f1f1f1;
+}
+#lista_ul li:hover{
+    background-color: #ffab91;
+    cursor: pointer;
 }
 #container_imput{
     padding-right: 40px;
@@ -90,6 +95,7 @@ input {
 }
 
 input[type=checkbox] {
+    float: left;
     display: block;
     width: 50px;
     height: 50px;
@@ -140,22 +146,27 @@ input[type=checkbox]:checked {
     color: #ffab91;
 }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
+    margin-left: 50px;
+    margin-top: 10px;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
-    margin-top: 10px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
 }
+.close {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.close:hover {
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}

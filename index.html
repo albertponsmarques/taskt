@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="src/proyecto/css/list_css.css">
-        <script src="src/proyecto/scripts/main.js"></script>
         <link rel="icon" href="src/proyecto/media/logomin.png" type="image/png">
         <title>TASKT</title>
     </head>
@@ -13,7 +12,7 @@
                 <img id="bars" src="src/proyecto/media/menu_bars.png" onclick="openNav()">
                 <img id="logo" src="src/proyecto/media/logo.png">
             </section>
-            <div id="mySidenav" class="sidenav">
+            <div id="menuizq" class="sidenav">
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <a>Lista de deberes</a>
                 <a>Lista de quehaceres</a>
@@ -22,18 +21,22 @@
                 <header id="header_title">
                     <h2 id="titulo_lista">Lista de la compra</h2>
                 </header>
-                <ul id="lista_ul">
-                    <li><input type="checkbox">4 Huevos</li>
-                    <li><input type="checkbox">3 limones</li>
-                    <li><input type="checkbox">Leche de 1L</li>
-                    <li><input type="checkbox">3 pimientos verdes</li>
-                    <li><input type="checkbox">80 lechugas</li>
-                </ul>
+                <div id="divlista">
+                    <ul id="lista_ul">
+                        <li ><input type="checkbox">4 Huevos</li>
+                        <li><input type="checkbox">3 limones</li>
+                        <li><input type="checkbox">Leche de 1L</li>
+                        <li><input type="checkbox">3 pimientos verdes</li>
+                        <li><input type="checkbox">80 lechugas</li>
+                    </ul>
+                </div>
                 <div id="container_imput">
-                    <input type="text" id="myInput" placeholder="Nuevo elemento">
+                    <input type="text" id="inputli" placeholder="Nuevo elemento">
                     <img onclick="newElement()" class="addBtn" src="src/proyecto/media/boton_plusv2.png">
                 </div>
             </section>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
+        <script src="src/proyecto/scripts/main.js"></script>
     </body>
 </html>
