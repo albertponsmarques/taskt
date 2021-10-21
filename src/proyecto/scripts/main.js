@@ -29,17 +29,7 @@ function newElement() {
     document.getElementById("inputli").value = "";
 }
 
-/*BORRAR ELEMENTO DE LA LISTA*/
-var milista = document.getElementsByTagName("li");
-var i;
-for (i = 0; i < milista.length; i++) {
-    var img = document.createElement("img");
-    img.setAttribute("src","src/proyecto/media/delete.svg")
-    img.setAttribute("onerror","this.onerror=null; this.src='src/proyecto/media/delete.png'")
-    img.className = "close";
-    milista[i].appendChild(img);
-}
-
+/*BORRAR ELEMENTO*/
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
